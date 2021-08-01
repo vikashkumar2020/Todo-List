@@ -1,0 +1,126 @@
+.App
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wrap-head
+{
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+.wrap-head img{
+  display: inline;
+  height: 60px;
+  width: 60px;
+  margin: 2%;
+}
+.heading
+{
+  display: inline;
+  color: rgb(8, 34, 83);
+  font-size: 34px;
+  text-align: center;
+  height: fit-content;
+  margin: 2%;
+}
+.main
+{
+  display: flex;
+  width: 100%;
+
+  min-height: 80vh;
+}
+.input-container
+{
+  display: flex;
+  flex-direction: column;
+  flex: 40%;
+  padding: 20px;
+  align-items: center;
+}
+.input-container span
+{
+  margin: 5px;
+  color:rgb(120, 25, 209);
+  font-weight: bold;
+}
+.title
+{
+  width: 70%;
+  resize: none;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin: 0px 0px 10px 0px;
+  border-radius: 5px;
+}
+.title:focus
+{
+  background-color: lightblue;
+}
+.description
+{
+  width: 70%;
+  height: 200px;
+  resize: none;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin: 0px 0px 10px 0px;
+  border-radius: 5px;
+}
+.btn
+{
+  margin: 20px 10px;
+  padding: 10px 30px;
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.40s all ease-in-out;
+}
+.btn:hover
+{
+  background-color: rgb(134, 75, 243);
+  color: white;
+}
+.todo-container
+{
+  flex:60%;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  max-height: 400px;
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+.todo-container> h2
+{
+  width: 100%;
+  font-size: 20px;
+  margin-left: 2%;
+  height: fit-content;
+  color: blueviolet;
+}
+
+@media only screen and (max-width: 572px)
+{
+  .main
+  {
+    flex-wrap: wrap;
+  }
+  .input-container
+  {
+    flex: 100%;
+  }
+  .todo-container
+  {
+    flex: 100%;
+  }
+}

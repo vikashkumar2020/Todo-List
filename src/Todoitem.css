@@ -1,0 +1,35 @@
+.item-box
+{   display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    margin: 5px;
+    border: 0px;
+    border-radius: 15px;
+    background-color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.item-head
+{
+    color: cadetblue;
+    font-size: 20px;
+    padding: 2px;
+    margin: 2px;
+}
+.item-box p{
+    font-size: medium;
+    padding: 5px;
+    margin: 2px;
+    font-weight: 200;
+}
+.item-box button
+{
+    width: fit-content;
+    padding: 5px 10px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    cursor: pointer;
+    color: gray;
+    background-color: rgb(214, 241, 241);
+}
