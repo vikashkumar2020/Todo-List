@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import Todoitem from "./Todoitem";
+import icon from "./icon.png"
 function App() {
   const [todos, setTodos] = useState([]);
   const [value, setValue] = useState("");
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div className="wrap-head">
-      <img src="./icon.png" alt="icon" />
+      <img src={icon} alt="icon" />
       <h1 className="heading">TODO-LIST</h1>
       </div>
       <div className="main">
