@@ -1,6 +1,8 @@
 # Getting Started with Todo List App
 
+## View deployment
 
+https://todolistviareact.netlify.app/
 
 ## Available Scripts
 
